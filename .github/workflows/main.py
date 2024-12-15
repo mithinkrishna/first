@@ -25,7 +25,7 @@ def prepare_dicom_payload(dicom_file_path, payload):
     return mal
 
 
-def modify_dicom_field(dicom_file_path, malicious_tag, outfile, sign):
+def modify_dicom_field(dicom_file_path, malicious_tag, outfile, sign):---
     try:
         dicom_dataset = pydicom.dcmread(dicom_file_path)
         if sign:
